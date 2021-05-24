@@ -1,20 +1,20 @@
 import React from "react";
-import vacationSpots from './vacationSpots'
+import Friends from './friends'
 import { Typography, AppBar, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core'
 import {PhotoCamera} from "@material-ui/icons"
 import useStyles from './styles.js'
-import GridItem from "./GridItem";
+import FriendGrid from "./FriendGrid";
 
 const App = () => {
     const classes = useStyles();
-    const spotComponent = vacationSpots.map(item => <GridItem key={item.id} item={item}></GridItem>)
+    const friendComponent = Friends.map(friend =>  <FriendGrid key={friend} friend={friend} pet={friend.pets}></FriendGrid>)
     return (
         <div>
             <CssBaseline />
             <AppBar position="relative">
                 <Toolbar>
                     <PhotoCamera className={classes.icon}/>
-                    <Typography variant="h6">Vacation Spots</Typography>
+                    <Typography variant="h6">Friends With Pets</Typography>
                 </Toolbar>
             </AppBar>
             <main>
@@ -30,7 +30,7 @@ const App = () => {
                 </div>
                 <Container className={classes.cardGrid} maxWidth="md">
                     <Grid container spacing={4}>
-                        {spotComponent}
+                        {friendComponent}
                     </Grid>
                 </Container>
             </main>
