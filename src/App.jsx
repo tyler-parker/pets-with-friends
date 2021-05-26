@@ -1,6 +1,6 @@
 import React from "react";
 import Friends from './friends'
-import { Typography, AppBar, CssBaseline, Grid, Container } from '@material-ui/core'
+import {  CssBaseline, Grid, Container } from '@material-ui/core'
 import useStyles from './styles.js'
 import FriendGrid from "./FriendGrid";
 import Footer from './Footer'
