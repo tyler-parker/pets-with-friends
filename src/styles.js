@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '40px'
     },
     cardGrid: {
-        paddingTop: '20px'
+        paddingTop: '20px',
+        paddingBottom: '20px'
     }, 
     card: {
         height: '100%',
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
     footer: {
         backgroundColor: theme.palette.background.paper,
-        padding: '50px 0'
+        padding: '50px'
     },
     pets: {
         padding: '5px'

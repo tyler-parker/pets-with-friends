@@ -19,10 +19,13 @@ function FriendGrid(props) {
                         <Typography gutterBottom variant="h5">
                             Age: {props.friend.age}
                         </Typography>
-                        {props.friend.pets.map(pet => <PetGrid pet={pet.name} />)}
+                        <Typography variant='h6'>
+                            Pets:
+                        </Typography>
+                        {props.friend.pets.map(pet => <PetGrid pet={pet} />)}
                     </CardContent>
                     <CardActions>
-                        
+
                         <Button size="small" color="primary">View</Button>
                         <Button size="small" color="secondary">Edit</Button>
                     </CardActions>

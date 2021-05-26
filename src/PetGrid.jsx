@@ -7,10 +7,12 @@ import FriendGrid from './FriendGrid'
 function PetGrid(props) {
     const classes = useStyles();
     return (
-        <Typography variant='p' className={classes.pets}>
-            {props.pet}
-            {console.log(props.pet)}
-        </Typography>
+        <div>
+            <Typography variant='p' className={classes.pets}>
+                {props.pet.name}
+                {console.log(props.pet.name)}
+            </Typography>
+        </div>
     )
 }
 
